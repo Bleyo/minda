@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Providers;
+namespace App;
 
-use Illuminate\Auth\Events\Registered;
-use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
+use Illuminate\Auth\Events\Registered;
 
 class EventServiceProvider extends ServiceProvider
 {
