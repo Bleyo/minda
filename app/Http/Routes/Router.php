@@ -25,13 +25,12 @@ class Router
         RouteEnum::VIEW
     ];
 
-    public function __construct(FileHandler $files, string $resourcePath)
+    public function __construct()
     {
-        $this->path = $resourcePath;
         // get namespace for resource
         // resource = App/Http/Resources/ -> each -> [Controllers]
         // no more -> group -> controllers -> path back 
-        $this->$files = $files;
+
     }
 
     public function getViews()
