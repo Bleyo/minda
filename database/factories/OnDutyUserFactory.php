@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Milestone>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\OnDutyUser>
  */
-class MilestoneFactory extends Factory
+class OnDutyUserFactory extends Factory
 {
     /**
      * Define the model's default state.

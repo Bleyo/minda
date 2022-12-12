@@ -75,15 +75,9 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        'Helper' => Helpers\Helper::class,
-        'Crud' => Helpers\Crud::class
+        'EnvEnum' => App\Sources\Enums\EnvEnum::class,
+        'FileEnum' => App\Sources\Enums\FileEnum::class,
+        'RouteEnum' => App\Sources\Enums\RouteEnum::class,
     ])->toArray(),
-
-    'router' => [
-        'groups' => [
-            'view' => app_path('Http/Routes/ViewRoutes.php'),
-            'resource' => app_path('Http/Routes/ResourceRoutes.php'),
-        ]
-    ]
 
 ];
