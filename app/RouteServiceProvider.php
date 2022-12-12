@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Cache\RateLimiting\Limit;
-use App\Services\FileHandler;
-use App\Http\Routes\Router;
+use App\Services\RouterService;
+use App\Services\Router;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -23,9 +23,6 @@ class RouteServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->resolving(RouterContract::class, function (FileHandler $handler, string $path) {
-            return new Router($handler, $path);
-        });
     }
 
     public function boot()
