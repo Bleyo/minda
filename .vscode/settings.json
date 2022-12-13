@@ -1,0 +1,118 @@
+{
+    "intelephense.environment.documentRoot": "./public/index.php",
+    "intelephense.diagnostics.typeErrors": true,
+    "intelephense.diagnostics.undefinedMethods": false,
+    "intelephense.format.enable": true,
+    "intelephense.diagnostics.argumentCount": true,
+    "intelephense.diagnostics.deprecated": true,
+    "intelephense.completion.insertUseDeclaration": true,
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+    "intelephense.files.exclude": [
+        "**/.git/**",
+        "**/.svn/**",
+        "**/.hg/**",
+        "**/CVS/**",
+        "**/.DS_Store/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**/{Tests,tests}/**",
+        "**/.history/**",
+        "**/vendor/**/vendor/**"
+    ],
+    "namespaceResolver.exclude": "**/node_modules/**",
+    "namespaceResolver.showMessageOnStatusBar": true,
+    "namespaceResolver.autoSort": true,
+    "namespaceResolver.sortOnSave": true,
+    "namespaceResolver.sortNatural": true,
+    "namespaceResolver.leadingSeparator": true,
+    "namespaceResolver.highlightOnSave": false,
+    "php.suggest.basic": false,
+    "php.validate.enable": true,
+    "php.validate.run": "onSave",
+    //
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.autoIndent": "advanced",
+    "editor.renderWhitespace": "all",
+    "workbench.editor.enablePreview": true,
+    "workbench.enableExperiments": false,
+    "workbench.startupEditor": "none",
+    //
+    "html.autoClosingTags": true,
+    "window.commandCenter": true,
+    "blade.format.enable": true,
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.referenceSearch.trigger",
+    "editor.foldingImportsByDefault": true,
+    "html.format.templating": true,
+    "editor.bracketPairColorization.enabled": true,
+    "search.seedOnFocus": true,
+    "editor.detectIndentation": false,
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "blade",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+    ],
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.renderLineHighlight": "line",
+    "editor.semanticHighlighting.enabled": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.wordBasedSuggestions": false,
+    "typescript.suggest.enabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.untitled.hint": "hidden",
+    "launch": {
+        "configurations": [
+            {
+                "command": "npm start",
+                "name": "Run npm start",
+                "request": "launch",
+                "type": "node-terminal"
+            }
+        ]
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Debian (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Debian"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Debian (WSL)",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "intelephense.files.associations": [
+        "*.php",
+        "*.phtml"
+    ],
+    "workbench.colorTheme": "Community Material Theme"
+}
